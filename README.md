@@ -2,7 +2,7 @@
 
 [Conan.io](https://conan.io) package for [Boost.Xpressive](https://github.com/Boostorg/Xpressive) project
 
-The packages generated with this **conanfile** can be found in [Bintray](https://bintray.com/bincrafters/conan-public/Boost.Xpressive%3Abincrafters).
+The packages generated with this **conanfile** can be found in [Bintray](https://bintray.com/bincrafters/public-conan/Boost.Xpressive%3Abincrafters).
 
 ## For Users: Use this package
 
