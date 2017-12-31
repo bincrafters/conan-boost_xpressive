@@ -7,7 +7,7 @@ from conans import ConanFile, tools
 class BoostXpressiveConan(ConanFile):
     name = "boost_xpressive"
     version = "1.66.0"
-    url = "https://github.com/bincrafters/conan-boost-xpressive"
+    url = "https://github.com/bincrafters/conan-boost_xpressive"
     
     lib_short_names = ["xpressive"]
     is_header_only = True
