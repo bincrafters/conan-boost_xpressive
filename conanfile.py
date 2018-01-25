@@ -8,7 +8,8 @@ class BoostXpressiveConan(ConanFile):
     name = "boost_xpressive"
     version = "1.66.0"
     url = "https://github.com/bincrafters/conan-boost_xpressive"
-    
+    author = "Bincrafters <bincrafters@gmail.com>"
+    exports = ["LICENSE.md"]
     lib_short_names = ["xpressive"]
     is_header_only = True
 
