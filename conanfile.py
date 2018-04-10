@@ -6,8 +6,7 @@ from conans import ConanFile, tools
 
 class BoostXpressiveConan(ConanFile):
     name = "boost_xpressive"
-    version = "1.66.0"
-    url = "https://github.com/bincrafters/conan-boost_xpressive"
+    version = "1.67.0"
     author = "Bincrafters <bincrafters@gmail.com>"
     exports = ["LICENSE.md"]
     lib_short_names = ["xpressive"]
@@ -15,38 +14,39 @@ class BoostXpressiveConan(ConanFile):
 
     def package_id_additional(self):
         self.info.header_only()
-    
+
     requires = (
-        "boost_package_tools/1.66.0@bincrafters/testing",
-        "boost_assert/1.66.0@bincrafters/testing",
-        "boost_config/1.66.0@bincrafters/testing",
-        "boost_conversion/1.66.0@bincrafters/testing",
-        "boost_core/1.66.0@bincrafters/testing",
-        "boost_exception/1.66.0@bincrafters/testing",
-        "boost_fusion/1.66.0@bincrafters/testing",
-        "boost_integer/1.66.0@bincrafters/testing",
-        "boost_iterator/1.66.0@bincrafters/testing",
-        "boost_lexical_cast/1.66.0@bincrafters/testing",
-        "boost_mpl/1.66.0@bincrafters/testing",
-        "boost_numeric_conversion/1.66.0@bincrafters/testing",
-        "boost_optional/1.66.0@bincrafters/testing",
-        "boost_preprocessor/1.66.0@bincrafters/testing",
-        "boost_proto/1.66.0@bincrafters/testing",
-        "boost_range/1.66.0@bincrafters/testing",
-        "boost_smart_ptr/1.66.0@bincrafters/testing",
-        "boost_static_assert/1.66.0@bincrafters/testing",
-        "boost_throw_exception/1.66.0@bincrafters/testing",
-        "boost_type_traits/1.66.0@bincrafters/testing",
-        "boost_typeof/1.66.0@bincrafters/testing",
-        "boost_utility/1.66.0@bincrafters/testing"
+        "boost_assert/1.67.0@bincrafters/testing",
+        "boost_config/1.67.0@bincrafters/testing",
+        "boost_conversion/1.67.0@bincrafters/testing",
+        "boost_core/1.67.0@bincrafters/testing",
+        "boost_exception/1.67.0@bincrafters/testing",
+        "boost_fusion/1.67.0@bincrafters/testing",
+        "boost_integer/1.67.0@bincrafters/testing",
+        "boost_iterator/1.67.0@bincrafters/testing",
+        "boost_lexical_cast/1.67.0@bincrafters/testing",
+        "boost_mpl/1.67.0@bincrafters/testing",
+        "boost_numeric_conversion/1.67.0@bincrafters/testing",
+        "boost_optional/1.67.0@bincrafters/testing",
+        "boost_package_tools/1.67.0@bincrafters/testing",
+        "boost_preprocessor/1.67.0@bincrafters/testing",
+        "boost_proto/1.67.0@bincrafters/testing",
+        "boost_range/1.67.0@bincrafters/testing",
+        "boost_smart_ptr/1.67.0@bincrafters/testing",
+        "boost_static_assert/1.67.0@bincrafters/testing",
+        "boost_throw_exception/1.67.0@bincrafters/testing",
+        "boost_type_traits/1.67.0@bincrafters/testing",
+        "boost_typeof/1.67.0@bincrafters/testing",
+        "boost_utility/1.67.0@bincrafters/testing"
     )
 
     # BEGIN
 
-    description = "Please visit http://www.boost.org/doc/libs/1_66_0"
+    url = "https://github.com/bincrafters/conan-boost_xpressive"
+    description = "Please visit http://www.boost.org/doc/libs/1_67_0"
     license = "BSL-1.0"
     short_paths = True
-    build_requires = "boost_generator/1.66.0@bincrafters/testing"
+    build_requires = "boost_generator/1.67.0@bincrafters/testing"
 
     def package_id(self):
         getattr(self, "package_id_additional", lambda:None)()
@@ -74,7 +74,5 @@ class BoostXpressiveConan(ConanFile):
             import boost_package_tools  # pylint: disable=F0401
             boost_package_tools.package_info(self)
         getattr(self, "package_info_additional", lambda:None)()
-
-
 
     # END
